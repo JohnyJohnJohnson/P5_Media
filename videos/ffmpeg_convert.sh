@@ -2,7 +2,7 @@
 
 convert_to_web_friendly() {
   local input_file="$1"
-  local output_file="web_opt_$input_file"
+  local output_file="$2"
 
   # If the user didn't specify both input and output, provide usage info
   if [[ -z "$input_file" || -z "$output_file" ]]; then
